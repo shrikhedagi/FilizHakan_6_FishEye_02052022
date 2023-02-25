@@ -133,19 +133,19 @@ export default class ContactForm
 
         // FIRST NAME VALIDATION CHECK: 
         if ((this.firstName.value === '') || (this.firstName.value == null)) {
-            this.errorFirst.innerHTML = 'Le prénom est un champ obligatoire. Veuillez le renseigner.';
+            this.errorFirst.innerHTML = 'First Name should not be empty';
             this.firstName.focus();
             this.firstName.style.border = '2px solid #fe142f';
 
             errorCheck = true;
         } else if (!this.firstName.value.match(/^[a-zA-Z-\s]+$/)) { // Add a new condition to alert the users of the non-validation of special caracters in his/her first name
-            this.errorFirst.innerHTML = 'Les caractères spéciaux tels que +"*ç%&/()=?!_-.,/|<> ne sont pas valides.';
+            this.errorFirst.innerHTML = 'No special characters allowed';
             this.firstName.focus();
             this.firstName.style.border = '2px solid #fe142f';
 
             errorCheck = true;
         } else if ((this.firstName.value.length < 2) || (this.firstName.value.length > 20)) {
-            this.errorFirst.innerHTML = "Veuillez entrer au moins 2 caractères valides.";
+            this.errorFirst.innerHTML = "Length should minimum 2 characters";
             this.firstName.focus();
             this.firstName.style.border = '2px solid #fe142f';
 
@@ -158,19 +158,19 @@ export default class ContactForm
 
         // LAST NAME VALIDATION CHECK: 
         if ((this.lastName.value === null) || (this.lastName.value === '')) {
-            this.errorLast.innerHTML = 'Le nom est un champ obligatoire. Veuillez le renseigner.';
+            this.errorLast.innerHTML = 'Last Name should not be empty';
             this.lastName.focus();
             this.lastName.style.border = '2px solid #fe142f';
 
             errorCheck = true;
         } else if (!this.lastName.value.match(/^[a-zA-Z-\s]+$/)) { // Add a new condition to alert the users of the non-validation of special caracters in his/her last name
-            this.errorLast.innerHTML = 'Les caractères spéciaux tels que +"*ç%&/()=?_-.,/|<> ne sont pas valides.';
+            this.errorLast.innerHTML = 'No special characters allowed';
             this.lastName.focus();
             this.lastName.style.border = '2px solid #fe142f';
 
             errorCheck = true;
         } else if ((this.lastName.value.length < 2) || (this.lastName.value.length > 20)) {
-            this.errorLast.innerHTML = "Veuillez entrer au moins 2 caractères valides.";
+            this.errorLast.innerHTML = "Length should minimum 2 characters";
             this.lastName.focus();
             this.lastName.style.border = '2px solid #fe142f';
 
@@ -182,13 +182,13 @@ export default class ContactForm
 
         // EMAIL ADDRESS VALIDATION CHECK: 
         if ((this.email.value === null) || (this.email.value === '')) {
-            this.errorEmail.innerHTML = "L'email est un champ obligatoire. Veuillez le renseigner.";
+            this.errorEmail.innerHTML = "Cannot be empty";
             this.email.focus();
             this.email.style.border = '2px solid #fe142f';
 
             errorCheck = true;
         } else if ((!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(this.email.value))) {
-            this.errorEmail.innerHTML = 'Veuillez respecter le format email: exemple@domaine.com.';
+            this.errorEmail.innerHTML = 'Wrong format';
             this.email.focus();
             this.email.style.border = '2px solid #fe142f';
 
@@ -200,7 +200,7 @@ export default class ContactForm
 
         // MESSAGE VALIDATION CHECK:
         if ((this.message.value === null) || (this.message.value === '')) {
-            this.errorMessage.innerHTML = 'Ce champ est obligatoire.';
+            this.errorMessage.innerHTML = 'Cannot be empty';
             this.message.focus();
             this.message.style.border = '2px solid #fe142f';
 

@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/2698c4b3a8.js" crossorigin="anonymous"></script>
     <!-- Google fonts import -->
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-    <title>Fisheye - photographe </title>
+    <title>HirePro</title>
   </head>
 
   <body id="body" class="main-wrapper">
@@ -30,7 +30,7 @@
       <div class="close-slider">
         <div id="message-nav">
           <div id="message-text">
-            Utilisez les flèches "droite" et "gauche" pour naviguer entre les médias
+          I dont know what is this
           </div>
           <div class="lightBox__content">
           </div>
@@ -50,7 +50,7 @@
       <section class="dropDownMenu menu-overlay">
         <div class="menu">
           <span tabindex="0" id="dropDownMenu-title">
-            Trier par
+            Sort by
           </span>
           <div class="menu-wrapper">
             <div class="dropDownMenu__button-wrapper">
@@ -59,7 +59,7 @@
                 class="dropDownBtn sort-option"
                 aria-haspopup="listbox" 
                 aria-label="drop-down-button">
-                Popularité
+                Popularity
               </button>
               <img src="./assets/icons/arrow.svg" alt="arrow button icon" id="chevron-icon"/>
             </div>
@@ -77,7 +77,7 @@
               aria-label="likes"
               aria-selected="true"
               class="activeOption sort-option sort-list">
-              Popularité
+              Popularity
             </button> 
             <button 
               role="option" 
@@ -93,7 +93,7 @@
               aria-selected="false"
               class="sort-option sort-list"
               aria-label="title">
-              Titre
+              Title
             </button>
           </div>
         </div>
@@ -101,7 +101,7 @@
       
       <!-- Portfolio Gallery -->
       <section id="photographer-gallery" class="photographer-gallery sr-container" aria-label="header for photographer's photos and videos gallery">
-        <h2 class="sr-container__gallery" id="photographer-gallery__header">Gallerie photos et videos des travaux du photographe</h2>
+        <h2 class="sr-container__gallery" id="photographer-gallery__header">Photography gallery</h2>
       </section>
 
     </main>
@@ -115,7 +115,7 @@
       <div id="form-content" role="group" class="form-content" aria-label="dialog-headline" tabindex="-1">
         <header tabindex="0" id="form-title" aria-hidden="false" class="form-header">
           <h2 id="modal-title" class="form-header__heading"> 
-          Contactez-moi
+          Book an appointment
           <br>
           <span id="form-photographer-name"></span>
           </h2>
@@ -132,29 +132,29 @@
         novalidate>
           <!-- First, Last name, email, message labels and inputs -->
           <div id="contactDataFirstName" class="contactData">
-            <label aria-label="first-name-label" class="contactData__label" for="firstName-input">*Prénom</label>
-            <input name="firstName" type="text" class="contactData__input" placeholder="ex. Jane" aria-label="First name" id="firstName-input" required/>
+            <label aria-label="first-name-label" class="contactData__label" for="firstName-input">First Name</label>
+            <input name="firstName" type="text" class="contactData__input" placeholder="Example - Swara" aria-label="First name" id="firstName-input" required/>
             <br>
             <span id="first_error" class="error"></span>
           </div>
           <div id="contactDataLastName" class="contactData">
-            <label aria-label="last-name-label" class="contactData__label" for="lastName-input">*Nom</label>
-            <input name="lastName" type="text" class="contactData__input" placeholder="ex. Doe" aria-label="Last name" id="lastName-input" required/>
+            <label aria-label="last-name-label" class="contactData__label" for="lastName-input">Last Name</label>
+            <input name="lastName" type="text" class="contactData__input" placeholder="Example- Kapoor" aria-label="Last name" id="lastName-input" required/>
             <br>
             <span id="last_error" class="error"></span>
           </div>
           <div id="contactDataEmail" class="contactData contactData__email">
-            <label aria-label="email-label" class="contactData__label" for="email-input">*Email</label>
-            <input name="email" type="email" class="contactData__input" aria-label="Email" id="email-input" placeholder="ex. jane.doe@example.com" required/>
+            <label aria-label="email-label" class="contactData__label" for="email-input">Please enter your Email id</label>
+            <input name="email" type="email" class="contactData__input" aria-label="Email" id="email-input" placeholder="Example - swara@gmail.com" required/>
             <br>
             <span id="email_error" class="error"></span>
           </div>
           <div id="contactDataMessage" class="contactData contactData__message">
-            <label aria-label="message-label" class="contactData__label" for="message-input">*Votre message</label>
-            <textarea name="message" cols="30" rows="10" class="text-area" aria-label="Your message" placeholder="Veuillez écrire votre message dans ce champs." id="message-input" required></textarea>
+            <label aria-label="message-label" class="contactData__label" for="message-input">Specify the event and other details for the photographer</label>
+            <textarea name="message" cols="30" rows="10" class="text-area" aria-label="Your message" placeholder="Example - Outdoor wedding photography, special shots for couple needed, both colour and black and white" id="message-input" required></textarea>
             <span id="message_error" class="error"></span>
           </div>
-          <button type="submit" class="button contact-button" id="submit" aria-label="Send" formnovalidate>Envoyer</button>
+          <button type="submit" class="button contact-button" id="submit" aria-label="Send" formnovalidate>Submit</button>
         </form>
       </div>
     </section>
