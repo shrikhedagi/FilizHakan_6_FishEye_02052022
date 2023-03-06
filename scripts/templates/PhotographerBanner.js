@@ -14,7 +14,7 @@ class PhotographerBanner {
             <p class="photographer-banner__tagline">${this._all.tagline}</p>
         </div>
             
-            <button type="button" class="button contact-button" id="contact-button" aria-label="Contact Me">Contactez-moi</button>
+            <button type="button" class="button contact-button" id="contact-button" aria-label="Contact Me">Contact Me</button>
             
             <img 
             tabindex="0"

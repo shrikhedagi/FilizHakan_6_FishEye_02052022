@@ -28,9 +28,9 @@ class Portfolio
         this.arrow = document.getElementById("chevron-icon");
         this.selectOptions =
         {
-            likes: 'Popularité',
+            likes: 'Popularity',
             date: 'Date',
-            title: 'Titre'
+            title: 'Title'
         }
         this.nameOption = this.button.innerText.toLowerCase();
         this.dropDownOverlay = document.querySelector('.menu-overlay');
